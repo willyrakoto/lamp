@@ -7,4 +7,4 @@ libapache2-mod-php5 \
 phpmyadmin
 ADD config-db.php /etc/phpmyadmin/config-db.php
 EXPOSE 8080
-CMD ["/bin/bash", "-c", "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"]
+CMD ["/bin/bash", "-c", "source /etc/apache2/envvars && sudo exec /usr/sbin/apache2 -DFOREGROUND"]
